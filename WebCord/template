@@ -1,0 +1,39 @@
+# Template file for 'WebCord'
+pkgname=WebCord
+version=4.2.0
+revision=1
+_npmver=8.13.2
+depends="electron24"
+makedepends="git nodejs"
+hostmakedepends=""
+short_desc="A Discord and Fosscord API-less client made with the Electron."
+maintainer="Natthias <natthias@proton.me>"
+license="MIT"
+homepage="https://github.com/SpacingBat3/WebCord"
+distfiles="${homepage}/archive/refs/tags/v${version}.tar.gz"
+checksum=f49eb0627ef1cf2ce41cdf22fef81b09614c0080619be6a77016e14a426bc951
+
+do_build() {
+        cp ${FILESDIR}/buildInfo.json ${wrksrc}
+	npm install -g npm@${_npmver}
+        npm install --engine-strict asar
+	npm install
+	npm update
+        npm install -g typescript
+        tsc --sourceMap false --outDir "app"
+        ./node_modules/.bin/asar pack --exclude-hidden . app.asar --unpack-dir "LICENSE"
+}
+
+do_install() {
+        vmkdir usr/lib/webcord
+        vcopy app.asar usr/lib/webcord
+        vmkdir usr/share/applications
+        vinstall ${FILESDIR}/webcord.desktop 644 usr/share/applications
+        vbin ${FILESDIR}/webcord
+        vmkdir usr/share/icons/hicolor/256x256/apps
+        vinstall sources/assets/icons/app.png 644 usr/share/icons/hicolor/256x256/apps webcord.png
+}
+
+post_install() {
+	vlicense LICENSE
+}

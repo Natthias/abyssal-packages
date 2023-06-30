@@ -1,0 +1,4 @@
+# Local shlibs
+libluksmeta.so.0 luksmeta-9_1
+libjose.so.0 jose-11_1
+libliftoff.so.0 libliftoff-0.3.0_1

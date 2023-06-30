@@ -1,0 +1,31 @@
+# Template file for 'hardened_malloc'
+pkgname=hardened_malloc
+version=11
+revision=1
+build_style=meta
+depends="hardened_malloc-default hardened_malloc-light"
+short_desc="Hardened memory allocator meta package"
+maintainer="Natthias <natthias@proton.me>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/GrapheneOS/hardened_malloc"
+distfiles="https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/${version}.tar.gz"
+checksum=14331990899b91f9323230c280d66f0d1a77c386eb5d206d4cd0d8b5683098da
+
+do_build() {
+	make VARIANT=default
+	make VARIANT=light
+}
+
+hardened_malloc-default_package() {
+	pkg_desc="Hardened memory allocator designed for modern systems - default variant"
+        pkg_install() {
+        	vinstall out/libhardened_malloc.so 755 /usr/lib
+        }
+}
+
+hardened_malloc-light_package() {
+	pkg_desc="Hardened memory allocator designed for modern systems - light variant"
+        pkg_install() {
+        	vinstall out-light/libhardened_malloc-light.so 755 /usr/lib
+        }
+}

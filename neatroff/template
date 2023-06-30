@@ -1,0 +1,25 @@
+# Template file for 'neatroff'
+pkgname=neatroff
+version=ab1be40
+_commit=ab1be40
+revision=1
+wrksrc=${pkgname}-${_commit}
+build_style=gnu-makefile
+short_desc="An implementation of troff typesetting system in C programming language"
+maintainer="Natthias <natthias@proton.me>"
+license="ISC"
+homepage="http://litcave.rudi.ir/"
+distfiles="https://repo.or.cz/${pkgname}.git/snapshot/${_commit}.tar.gz"
+checksum=360ff8062ab7474e698f87d329e29bb8cebd2600521f571de7da4f8aabee0ae2
+
+do_build() {
+	make all FDIR=/usr/share/neatroff/font MDIR=/usr/share/neatroff/tmac
+}
+
+do_install() {
+	vbin roff usr/bin/neatroff
+
+	vmkdir usr/share/neatroff
+	vcopy ${FILESDIR}/tmac /usr/share/neatroff
+	vcopy ${FILESDIR}/font /usr/share/neatroff
+}

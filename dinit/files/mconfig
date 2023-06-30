@@ -1,0 +1,19 @@
+# Installation path options.
+
+SBINDIR=/usr/bin
+MANDIR=/usr/share/man
+SYSCONTROLSOCKET=/run/dinitctl
+SHUTDOWN_PREFIX=dinit-
+
+# General build options.
+
+CXX=g++
+# "-D_FORTIFY_SOURCE=2" doesnt build
+#CXXOPTS= $(CXXFLAGS) -fno-rtti -fno-plt
+CXXOPTS= -fstack-clash-protection -mtune=generic -O2 -pipe -fno-rtti
+BUILD_SHUTDOWN=yes
+SANITIZEOPTS=
+
+# Feature settings
+
+SUPPORT_CGROUPS=1

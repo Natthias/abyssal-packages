@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# Kernel hook for sbctl.
+#
+# Arguments passed to this script: $1 pkgname, $2 version.
+#
+PKGNAME="$1"
+VERSION="$2"
+
+sbctl remove-file "/efi/EFI/Linux/$VERSION.efi"

@@ -1,0 +1,14 @@
+# Template file for 'obs-vkcapture'
+pkgname=obs-vkcapture
+version=1.3.3
+revision=1
+build_style=cmake
+hostmakedepends="pkg-config wayland-devel"
+makedepends="Vulkan-Headers vulkan-loader obs-devel libglvnd-devel libX11-devel"
+depends="obs libglvnd vulkan-loader"
+short_desc="OBS Linux Vulkan/OpenGL game capture"
+maintainer="Natthias <natthias@proton.me>"
+license="GPL-2.0"
+homepage="https://github.com/nowrep/obs-vkcapture"
+distfiles="https://github.com/nowrep/obs-vkcapture/archive/refs/tags/v${version}.tar.gz"
+checksum=f82cc781741b189f9d4199176d5098f8b68a6f9e9c3f9ef03435d7e2581ef79f

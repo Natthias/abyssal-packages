@@ -1,0 +1,14 @@
+# Template file for 'kconfig-hardened-check'
+pkgname=kconfig-hardened-check
+version=0.6.1
+revision=1
+build_style=python3-module
+hostmakedepends="python3-setuptools"
+makedepends=""
+depends=""
+short_desc="Tool for checking the security hardening options of the Linux kernel"
+maintainer="Natthias <natthias@proton.me>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/a13xp0p0v/kconfig-hardened-check"
+distfiles="https://github.com/a13xp0p0v/kconfig-hardened-check/archive/refs/tags/v${version}.tar.gz"
+checksum=0d4885c4cdeb6351ce1c2e663e4373e9bcd7fe9ae7a58eaa3558040f7edc5467

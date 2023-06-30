@@ -1,0 +1,26 @@
+# Template file for 'joycond'
+pkgname=joycond
+version=1
+revision=1
+build_style=cmake
+hostmakedepends="pkg-config"
+makedepends="libevdev-devel eudev-libudev-devel"
+depends=""
+short_desc="Userspace daemon for Nintendo switch Joy-Con and Pro Controller"
+maintainer="Natthias <natthias@proton.me>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/DanielOgorchock/joycond"
+distfiles="https://github.com/DanielOgorchock/joycond/archive/refs/heads/master.tar.gz"
+checksum=ff8f4427732bddda8e41f8ee0d5b8d0a6bae315974daddaf6b6d2a2dbd7971dc
+
+do_install() {
+        vsv joycond
+
+        vinstall build/joycond 755 usr/bin
+
+        vinstall udev/89-joycond.rules 644 usr/lib/udev/rules.d
+        vinstall udev/72-joycond.rules 644 usr/lib/udev/rules.d
+        vinstall systemd/joycond.conf 644 /etc/modules-load.d
+
+        vman doc/joycond.1
+}

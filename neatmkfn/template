@@ -1,0 +1,21 @@
+# Template file for 'neatmkfn'
+pkgname=neatmkfn
+version=dd686db
+_commit=dd686db
+revision=1
+wrksrc=${pkgname}-${_commit}
+build_style=gnu-makefile
+short_desc="Tool to create font descriptors for Neatroff"
+maintainer="Natthias <natthias@proton.me>"
+license="ISC"
+homepage="http://litcave.rudi.ir/"
+distfiles="https://repo.or.cz/${pkgname}.git/snapshot/${_commit}.tar.gz"
+checksum=5970cd8102b28f278d197f40bc11ed5d450d5bd8e27701e900a04eee3dba405c
+
+do_build() {
+	make all
+}
+
+do_install() {
+	vbin mkfn usr/bin/neatmkfn
+}

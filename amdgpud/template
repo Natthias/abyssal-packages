@@ -1,0 +1,53 @@
+# Template file for 'amdgpud'
+pkgname=amdgpud
+version=1.0.11
+revision=1
+build_style=meta
+depends="amdfand amdvold amdmond amdguid"
+hostmakedepends="cargo"
+makedepends="cmake git python3 libxcb-devel"
+short_desc="amdgpu tools - meta package"
+maintainer="Natthias <natthias@proton.me>"
+license="Apache-2.0, MIT"
+homepage="https://github.com/Eraden/amdgpud"
+distfiles="https://github.com/Eraden/amdgpud/archive/refs/tags/v${version}.tar.gz"
+checksum=93b30219d284debf2e1893b6d60f37545c3c87ce8f49c7bf1fd2ee8c42af6bb6
+
+do_build() {
+	cargo build --release --target ${XBPS_RUST_TARGET}
+}
+
+amdfand_package() {
+        pkg_desc="AMDGPU fan speed management tool"
+        pkg_install() {
+                vinstall examples/default_config.toml 644 etc/amdfand config.toml
+                vbin "target/${XBPS_RUST_TARGET}/release/amdfand" usr/bin/amdfand
+                vsv amdfand
+        }
+}
+
+amdvold_package() {
+        pkg_desc="AMDGPU voltage management tool"
+        pkg_install() {
+                vbin "target/${XBPS_RUST_TARGET}/release/amdvold" usr/bin/amdvold
+                vsv amdvold
+        }
+}
+
+amdmond_package() {
+        pkg_desc="AMDGPU temperature and fan speed monitoring tool"
+        pkg_install() {
+                vbin "target/${XBPS_RUST_TARGET}/release/amdmond" usr/bin/amdmond
+                vsv amdmond
+        }
+}
+
+amdguid_package() {
+        pkg_desc="AMDGPU temperature and fan speed monitoring tool (GUI)"
+        depends="amdfand"
+        pkg_install() {
+                vbin "target/${XBPS_RUST_TARGET}/release/amdguid" usr/bin/amdguid
+                vbin "target/${XBPS_RUST_TARGET}/release/amdgui-helper" usr/bin/amdgui-helper
+                vsv amdgui-helper
+        }
+}

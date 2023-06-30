@@ -1,0 +1,35 @@
+# Template file for 'FreeTube'
+pkgname=FreeTube
+version=0.18.0
+revision=1
+depends="electron24 gtk+3 nss"
+makedepends="git yarn nodejs"
+short_desc="An open source desktop YouTube player built with privacy in mind"
+maintainer="Natthias <natthias@proton.me>"
+license="AGPL-3.0-only"
+homepage="https://freetubeapp.io"
+distfiles="https://github.com/FreeTubeApp/FreeTube/archive/refs/tags/v${version}-beta.tar.gz"
+checksum=6db8d81453e3caa5e304e1dca534b26669d6ac863e78189b19f6771dfbf9f631
+
+do_build() {
+        yarn --cache-folder yarn-cache install
+        npm --cache npm-cache run build
+}
+
+do_install() {
+        vmkdir usr/lib/freetube
+        vinstall build/linux-unpacked/resources/app.asar 644 usr/lib/freetube
+        vbin ${FILESDIR}/freetube
+
+        vmkdir usr/share/applications
+        vinstall ${FILESDIR}/freetube.desktop 644 usr/share/applications
+
+        vmkdir usr/share/icons/hicolor/256x256/apps
+        vinstall _icons/256x256.png 644 usr/share/icons/hicolor/256x256/apps freetube.png
+        vinstall _icons/icon.svg 644 usr/share/pixmaps ${pkgname}.svg
+}
+
+post_install() {
+	vdoc README.md
+	vlicense LICENSE
+}

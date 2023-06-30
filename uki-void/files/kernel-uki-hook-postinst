@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# Kernel hook for assembling a uki
+#
+# Arguments passed to this script: $1 pkgname, $2 version.
+#
+PKGNAME="$1"
+VERSION="$2"
+
+efistub="/usr/lib/systemd/boot/efi/linuxx64.efi.stub"
+osrel="/usr/lib/os-release"
+cmdline="/etc/kernel.d/cmdline"
+splash="/usr/share/void-artwork/splash-void.bmp"
+vmlinuz="/boot/vmlinuz-$VERSION"
+initrd="/boot/initramfs-$VERSION.img"
+ucode="/boot/ucode.img"
+combined_initrd="$(mktemp)"
+cat "$ucode" "$initrd" > "$combined_initrd"
+
+osrel_offs=$(objdump -h $efistub | awk 'NF==7 {size=strtonum("0x"$3); offset=strtonum("0x"$4)} END {print size + offset}')
+cmdline_offs=$((osrel_offs + $(stat -Lc%s $osrel)))
+splash_offs=$((cmdline_offs + $(stat -Lc%s $cmdline)))
+linux_offs=$((cmdline_offs + $(stat -Lc%s $splash)))
+initrd_offs=$((linux_offs + $(stat -Lc%s $vmlinuz)))
+objcopy \
+    --add-section .osrel=$osrel --change-section-vma .osrel=$(printf 0x%x $osrel_offs) \
+    --add-section .cmdline=$cmdline \
+    --change-section-vma .cmdline=$(printf 0x%x $cmdline_offs) \
+    --add-section .splash=$splash \
+    --change-section-vma .splash=$(printf 0x%x $splash_offs) \
+    --add-section .linux="$vmlinuz" \
+    --change-section-vma .linux=$(printf 0x%x $linux_offs) \
+    --add-section .initrd="$combined_initrd" \
+    --change-section-vma .initrd=$(printf 0x%x $initrd_offs) \
+    $efistub "/efi/EFI/Linux/$VERSION.efi"
+
+rm -f "$combined_initrd"

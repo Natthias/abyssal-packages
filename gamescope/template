@@ -1,0 +1,35 @@
+# Template file for 'gamescope'
+pkgname=gamescope
+version=3.11.51
+revision=1
+_stb_commit=5cfc2a744ad7047cda2396cc67772f313a46093d # latest commit before release of 3.11.51
+_vkroots_commit=e6b89494142eec0ac6061f82a947d2f1246d3d7a
+build_wrksrc="${pkgname}-${version}"
+build_style=meson
+configure_args="-Dforce_fallback_for='' -Dpipewire=enabled"
+depends="xorg-server-xwayland"
+hostmakedepends="pkg-config glslang xorg-server-xwayland wayland-devel"
+makedepends="libX11-devel libXdamage-devel libXcomposite-devel hwids
+ libXrender-devel libXxf86vm-devel libXtst-devel libXres-devel libdrm-devel
+ vulkan-loader wayland-protocols libxkbcommon-devel libcap-devel
+ SDL2-devel wlroots-devel libseat-devel libliftoff-devel"
+short_desc="micro-compositor formerly known as steamcompmgr"
+maintainer="Natthias <natthias@proton.me>"
+license="BSD-2-Clause"
+homepage="https://github.com/ValveSoftware/gamescope"
+distfiles="https://github.com/ValveSoftware/gamescope/archive/refs/tags/${version}.tar.gz
+ https://github.com/nothings/stb/archive/${_stb_commit}.tar.gz
+ https://github.com/Joshua-Ashton/vkroots/archive/${_vkroots_commit}.tar.gz"
+checksum="0ffe1c3e3cdf40e20b45b758f8e4c334c5c0941eb05437e59e9c6aaf8c948a1e
+ 12650eda383d645e8dae45646340c19702f31a135a6129e71c51a3c693fb1c69
+ 501568cf7f868b1b7fda71030a20ca9cb785025c89f45a156534270c376758ce"
+
+post_extract() {
+	mv stb-${_stb_commit} ${build_wrksrc}/subprojects/stb
+	mv ${build_wrksrc}/subprojects/packagefiles/stb/meson.build ${build_wrksrc}/subprojects/stb
+	rmdir ${build_wrksrc}/subprojects/packagefiles/stb ${build_wrksrc}/subprojects/packagefiles
+	#mv stb-${_stb_commit} ${build_wrksrc}/subprojects/packagefiles/stb
+        
+	rmdir ${build_wrksrc}/subprojects/vkroots
+	mv vkroots-${_vkroots_commit} ${build_wrksrc}/subprojects/vkroots
+}

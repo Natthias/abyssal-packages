@@ -1,0 +1,1400 @@
+name ZI
+fontname ZapfChancery-MediumItalic
+spacewidth 18
+ligatures fi fl 0
+char ---	100	3	.notdef	0
+char !	23,9,-1,29,49	2	exclam	33
+char "	18,14,34,28,49	2	quotedbl	34
+char dq	"
+char #	37,5,0,50,48	2	numbersign	35
+char $	37,5,-12,39,56	2	dollar	36
+char %	57,14,-1,59,49	2	percent	37
+char &	65,10,-2,71,47	2	ampersand	38
+char '	20,19,30,30,48	2	quoteright	39
+char cq	"
+char (	22,10,-14,34,56	3	parenleft	40
+char )	18,1,-14,26,56	3	parenright	41
+char *	35,18,31,43,57	2	asterisk	42
+char +	43,9,1,43,35	0	plus	43
+char pl	"
+char ,	18,3,-8,18,15	1	comma	44
+char -	23,10,14,25,20	0	hyphen	45
+char hy	"
+char .	18,9,-1,19,11	0	period	46
+char /	28,-1,-14,45,57	2	slash	47
+char sl	"
+char 0	37,8,-1,41,48	2	zero	48
+char 1	37,7,0,36,49	2	one	49
+char 2	37,4,-2,39,48	2	two	50
+char 3	37,3,-1,38,48	2	three	51
+char 4	37,6,-2,38,49	2	four	52
+char 5	37,6,-1,47,53	2	five	53
+char 6	37,8,-1,44,49	2	six	54
+char 7	37,14,-2,45,51	2	seven	55
+char 8	37,6,-1,41,48	2	eight	56
+char 9	37,4,-1,40,48	2	nine	57
+char :	22,8,-1,24,34	0	colon	58
+char ;	20,2,-8,23,34	1	semicolon	59
+char <	43,10,0,47,38	0	less	60
+char =	43,9,9,43,28	0	equal	61
+char eq	"
+char >	43,10,0,46,38	0	greater	62
+char ?	32,11,-1,42,49	2	question	63
+char @	58,9,-3,64,49	3	at	64
+char A	52,2,-1,57,50	2	A	65
+char B	50,6,0,54,51	2	B	66
+char C	43,7,-6,53,49	2	C	67
+char D	58,7,0,63,51	2	D	68
+char E	52,6,-1,56,49	2	E	69
+char F	48,5,-10,61,52	2	F	70
+char G	52,10,-20,56,49	2	G	71
+char H	57,3,-1,76,57	2	H	72
+char I	32,7,0,40,48	2	I	73
+char J	33,0,-10,41,48	3	J	74
+char K	55,7,-12,71,48	2	K	75
+char L	48,3,-1,53,48	2	L	76
+char M	70,5,-1,84,56	2	M	77
+char N	58,3,-14,76,57	2	N	78
+char O	50,9,-1,54,49	2	O	79
+char P	45,3,0,54,50	2	P	80
+char Q	50,9,-16,71,49	3	Q	81
+char R	50,3,-13,69,51	2	R	82
+char S	38,0,-6,43,49	2	S	83
+char T	42,5,0,60,54	2	T	84
+char U	62,10,-1,65,48	2	U	85
+char V	53,9,-1,68,57	2	V	86
+char W	73,9,-2,86,57	2	W	87
+char X	47,0,-1,56,48	2	X	88
+char Y	47,3,-13,64,51	2	Y	89
+char Z	52,5,-2,56,50	2	Z	90
+char [	20,4,-14,34,56	3	bracketleft	91
+char \	40,15,0,40,48	2	backslash	92
+char bs	"
+char rs	"
+char ]	27,2,-14,32,56	3	bracketright	93
+char ha	43,18,37,39,57	3	asciicircum	94
+char _	42,0,-12,42,-8	1	underscore	95
+char ru	"
+char ul	"
+char `	20,19,36,32,56	0	quoteleft	96
+char oq	"
+char a	35,7,-1,41,34	0	a	97
+char b	35,7,-2,39,57	2	b	98
+char c	28,7,-1,32,34	0	c	99
+char d	37,7,-1,53,57	2	d	100
+char e	28,7,-1,32,34	0	e	101
+char f	27,-8,-21,45,57	2	f	102
+char g	33,-7,-21,40,34	1	g	103
+char h	37,6,-1,42,57	2	h	104
+char i	20,7,-1,26,51	2	i	105
+char j	18,-11,-21,25,51	3	j	106
+char k	37,7,-13,55,56	2	k	107
+char l	20,7,-1,36,57	2	l	108
+char m	52,7,-1,58,34	0	m	109
+char n	38,7,-1,43,34	0	n	110
+char o	33,7,-1,38,34	0	o	111
+char p	37,-1,-21,40,34	1	p	112
+char q	33,7,-21,41,40	1	q	113
+char r	25,7,-1,34,34	0	r	114
+char s	27,3,-1,32,34	0	s	115
+char t	27,8,-1,33,42	2	t	116
+char u	38,7,-1,43,35	0	u	117
+char v	37,7,-1,43,37	0	v	118
+char w	57,7,-1,63,37	0	w	119
+char x	35,6,-13,49,34	0	x	120
+char y	33,1,-21,40,35	1	y	121
+char z	37,4,-1,40,36	0	z	122
+char {	20,9,-14,34,55	2	braceleft	123
+char |	43,26,0,30,60	2	bar	124
+char or	"
+char }	20,1,-14,26,55	2	braceright	125
+char ti	43,7,14,44,23	0	asciitilde	126
+char ¡	23,5,-16,25,34	0	exclamdown	161
+char !!	"
+char r!	"
+char ¢	37,11,-6,38,54	2	cent	162
+char c|	"
+char ct	"
+char £	37,0,-5,36,48	2	sterling	163
+char L-	"
+char ps	"
+char ⁄	5,-10,-1,23,49	2	fraction	164
+char fr	"
+char ¥	37,-1,-13,52,51	2	yen	165
+char Y-	"
+char yn	"
+char ƒ	37,-4,-21,49,57	2	florin	166
+char fn	"
+char §	35,5,-14,39,48	2	section	167
+char so	"
+char sc	"
+char ¤	37,4,6,40,42	0	currency	168
+char xo	"
+char cr	"
+char aq	13,14,34,22,49	2	quotesingle	169
+char “	28,19,36,42,56	2	quotedblleft	170
+char ``	"
+char lq	"
+char «	28,8,-1,34,35	0	guillemotleft	171
+char <<	"
+char Fo	"
+char ‹	20,8,-1,24,35	0	guilsinglleft	172
+char fo	"
+char ›	22,7,0,24,35	0	guilsinglright	173
+char fc	"
+char ﬁ	43,-9,-21,51,57	3	fi	174
+char fi	"
+char ﬂ	43,-9,-21,59,57	2	fl	175
+char fl	"
+char –	42,3,14,48,20	0	endash	177
+char en	"
+char \-	"
+char †	38,8,-12,44,51	2	dagger	178
+char dg	"
+char ‡	40,8,-12,44,51	2	daggerdbl	179
+char dd	"
+char ·	18,9,13,19,23	0	periodcentered	180
+char .^	"
+char ¶	42,2,-21,54,49	3	paragraph	182
+char P!	"
+char pg	"
+char •	50,19,18,47,47	2	bullet	183
+char bu	"
+char ‚	15,3,-9,14,9	0	quotesinglbase	184
+char bq	"
+char „	23,3,-9,24,9	0	quotedblbase	185
+char ”	30,19,38,40,56	2	quotedblright	186
+char ''	"
+char rq	"
+char »	32,7,0,34,35	0	guillemotright	187
+char >>	"
+char Fc	"
+char …	83,9,-1,75,11	0	ellipsis	188
+char el	"
+char ‰	80,14,-1,81,49	2	perthousand	189
+char %0	"
+char ¿	33,5,-15,36,34	0	questiondown	191
+char ??	"
+char r?	"
+char ga	18,14,38,24,55	2	grave	193
+char \`	"
+char ´	25,17,38,32,55	2	acute	194
+char aa	"
+char \'	"
+char ˆ	28,15,38,33,55	2	circumflex	195
+char ^	"
+char ^a	"
+char ˜	37,15,41,43,50	2	tilde	196
+char ~	"
+char ¯	37,15,43,43,47	2	macron	197
+char -a	"
+char ˘	37,15,41,43,52	2	breve	198
+char Ua	"
+char ˙	18,17,41,26,51	2	dotaccent	199
+char .a	"
+char ¨	30,15,41,35,51	2	dieresis	200
+char ""	"
+char :a	"
+char ˚	25,19,38,34,53	2	ring	202
+char oa	"
+char ¸	25,3,-18,18,0	0	cedilla	203
+char ,,	"
+char ,a	"
+char ˝	33,15,38,39,55	2	hungarumlaut	205
+char "a	"
+char ˛	23,5,-13,18,0	0	ogonek	206
+char Ca	"
+char ˇ	28,20,38,37,55	2	caron	207
+char va	"
+char —	83,3,14,90,20	0	emdash	208
+char em	"
+char --	"
+char Æ	62,3,0,67,48	2	AE	225
+char AE	"
+char ª	22,7,21,27,48	2	ordfeminine	227
+char a_	"
+char Ł	48,3,-1,53,48	2	Lslash	232
+char Ø	55,9,-11,59,58	2	Oslash	233
+char O/	"
+char Œ	68,9,-1,73,49	2	OE	234
+char º	22,8,21,27,48	2	ordmasculine	235
+char o_	"
+char æ	45,7,-1,49,37	0	ae	241
+char ae	"
+char ı	20,7,-1,26,34	0	dotlessi	245
+char ł	25,7,-1,41,57	2	lslash	248
+char ø	37,8,-12,39,46	2	oslash	249
+char o/	"
+char œ	47,7,-1,50,34	0	oe	250
+char ß	35,-11,-21,42,57	3	germandbls	251
+char ss	"
+char Ä	52,2,-1,58,65	2	Adieresis	
+char A:	"
+char A"	"
+char Á	52,2,-1,57,68	2	Aacute	
+char A'	"
+char À	52,2,-1,57,68	2	Agrave	
+char A`	"
+char Â	52,2,-1,57,69	2	Acircumflex	
+char A^	"
+char Ă	52,2,-1,62,65	2	Abreve	
+char Ã	52,2,-1,63,64	2	Atilde	
+char A~	"
+char Å	52,2,-1,57,67	2	Aring	
+char A*	"
+char Ą	52,2,-13,57,50	2	Aogonek	
+char Ç	43,7,-22,53,49	3	Ccedilla	
+char C,	"
+char Ć	43,7,-6,53,68	2	Cacute	
+char Č	43,7,-6,57,69	2	Ccaron	
+char C<	"
+char Ď	58,7,0,63,69	2	Dcaron	
+char D<	"
+char Ë	52,6,-1,56,65	2	Edieresis	
+char E:	"
+char É	52,6,-1,56,68	2	Eacute	
+char E'	"
+char È	52,6,-1,56,68	2	Egrave	
+char E`	"
+char Ê	52,6,-1,56,69	2	Ecircumflex	
+char E^	"
+char Ě	52,6,-1,56,69	2	Ecaron	
+char Ė	52,6,-1,56,65	2	Edotaccent	
+char Ę	52,6,-13,56,49	2	Eogonek	
+char Ğ	52,10,-20,56,65	2	Gbreve	
+char Ï	32,7,0,40,65	2	Idieresis	
+char I:	"
+char Í	32,7,0,40,68	2	Iacute	
+char I'	"
+char Ì	32,7,0,40,68	2	Igrave	
+char I`	"
+char Î	32,7,0,41,69	2	Icircumflex	
+char I^	"
+char İ	32,7,0,40,65	2	Idotaccent	
+char Ĺ	48,3,-1,53,68	2	Lacute	
+char Ľ	48,3,-1,58,49	2	Lcaron	
+char Ń	58,3,-14,76,68	2	Nacute	
+char Ň	58,3,-14,76,69	2	Ncaron	
+char Ñ	58,3,-14,76,64	2	Ntilde	
+char N~	"
+char Ö	50,9,-1,54,65	2	Odieresis	
+char O:	"
+char Ó	50,9,-1,54,68	2	Oacute	
+char O'	"
+char Ò	50,9,-1,54,68	2	Ograve	
+char O`	"
+char Ô	50,9,-1,54,69	2	Ocircumflex	
+char O^	"
+char Õ	50,9,-1,57,64	2	Otilde	
+char O~	"
+char Ő	50,9,-1,54,68	2	Ohungarumlaut	
+char O"	"
+char Ŕ	50,3,-13,69,68	2	Racute	
+char Ř	50,3,-13,69,69	2	Rcaron	
+char R<	"
+char Ś	38,0,-6,43,68	2	Sacute	
+char Š	38,0,-6,51,69	2	Scaron	
+char S<	"
+char Ş	38,0,-22,43,49	3	Scedilla	
+char Ť	42,5,0,60,69	2	Tcaron	
+char T<	"
+char Ü	62,10,-1,65,65	2	Udieresis	
+char U:	"
+char Ú	62,10,-1,65,68	2	Uacute	
+char U'	"
+char Ù	62,10,-1,65,68	2	Ugrave	
+char U`	"
+char Û	62,10,-1,65,69	2	Ucircumflex	
+char U^	"
+char Ů	62,10,-1,65,67	2	Uring	
+char U*	"
+char Ű	62,10,-1,68,68	2	Uhungarumlaut	
+char U"	"
+char Ý	47,3,-13,64,68	2	Yacute	
+char Y'	"
+char Ź	52,5,-2,56,68	2	Zacute	
+char Ž	52,5,-2,56,69	2	Zcaron	
+char Z<	"
+char Ż	52,5,-2,56,65	2	Zdotaccent	
+char Ā	52,2,-1,63,61	2	Amacron	
+char Ţ	42,5,-23,60,54	3	Tcommaaccent	
+char Ÿ	47,3,-13,64,65	2	Ydieresis	
+char Y:	"
+char Ē	52,6,-1,56,61	2	Emacron	
+char Ī	32,7,0,46,61	2	Imacron	
+char Į	32,7,-13,40,48	2	Iogonek	
+char Ķ	55,7,-23,71,48	3	Kcommaaccent	
+char Ļ	48,3,-23,53,48	3	Lcommaaccent	
+char Ņ	58,3,-23,76,57	3	Ncommaaccent	
+char Ō	50,9,-1,54,61	2	Omacron	
+char Ŗ	50,3,-23,69,51	3	Rcommaaccent	
+char Ģ	52,10,-23,56,49	3	Gcommaaccent	
+char Ū	62,10,-1,66,61	2	Umacron	
+char Ų	62,10,-13,65,48	2	Uogonek	
+char ä	35,7,-1,41,51	2	adieresis	
+char a:	"
+char á	35,7,-1,41,55	2	aacute	
+char a'	"
+char à	35,7,-1,41,55	2	agrave	
+char a`	"
+char â	35,7,-1,41,55	2	acircumflex	
+char a^	"
+char ă	35,7,-1,44,52	2	abreve	
+char ã	35,7,-1,43,50	2	atilde	
+char a~	"
+char å	35,7,-1,41,53	2	aring	
+char a*	"
+char ą	35,7,-13,41,34	0	aogonek	
+char ć	28,7,-1,37,55	2	cacute	
+char č	28,7,-1,39,55	2	ccaron	
+char c<	"
+char ç	28,5,-18,32,34	0	ccedilla	
+char c,	"
+char ď	41,7,-1,58,57	2	dcaron	
+char d<	"
+char ë	28,7,-1,34,51	2	edieresis	
+char e:	"
+char é	28,7,-1,34,55	2	eacute	
+char e'	"
+char è	28,7,-1,32,55	2	egrave	
+char e`	"
+char ê	28,7,-1,33,55	2	ecircumflex	
+char e^	"
+char ě	28,7,-1,41,55	2	ecaron	
+char e<	"
+char ė	28,7,-1,32,51	2	edotaccent	
+char ę	28,7,-13,32,34	0	eogonek	
+char ğ	33,-7,-21,41,52	3	gbreve	
+char ï	20,7,-1,30,51	2	idieresis	
+char i:	"
+char í	20,7,-1,30,55	2	iacute	
+char i'	"
+char ì	20,7,-1,26,55	2	igrave	
+char i`	"
+char î	20,7,-1,29,55	2	icircumflex	
+char i^	"
+char ĺ	20,7,-1,38,72	2	lacute	
+char ľ	24,7,-1,41,57	2	lcaron	
+char ń	38,7,-1,43,55	2	nacute	
+char ň	38,7,-1,43,55	2	ncaron	
+char n<	"
+char ñ	38,7,-1,44,50	2	ntilde	
+char n~	"
+char ö	33,7,-1,38,51	2	odieresis	
+char o:	"
+char ó	33,7,-1,38,55	2	oacute	
+char o'	"
+char ò	33,7,-1,38,55	2	ograve	
+char o`	"
+char ô	33,7,-1,38,55	2	ocircumflex	
+char o^	"
+char õ	33,7,-1,41,50	2	otilde	
+char o~	"
+char ő	33,7,-1,45,55	2	ohungarumlaut	
+char o"	"
+char ŕ	25,7,-1,36,55	2	racute	
+char ś	27,3,-1,37,55	2	sacute	
+char š	27,3,-1,40,55	2	scaron	
+char s<	"
+char ș	27,3,-23,32,34	1	scommaaccent	
+char ť	27,8,-1,40,57	2	tcaron	
+char t<	"
+char ü	38,7,-1,43,51	2	udieresis	
+char u:	"
+char ú	38,7,-1,43,55	2	uacute	
+char u'	"
+char ù	38,7,-1,43,55	2	ugrave	
+char u`	"
+char û	38,7,-1,43,55	2	ucircumflex	
+char u^	"
+char ů	38,7,-1,43,53	2	uring	
+char u*	"
+char ű	38,7,-1,45,55	2	uhungarumlaut	
+char u"	"
+char ý	33,1,-21,40,55	3	yacute	
+char y'	"
+char ź	37,4,-1,42,55	2	zacute	
+char ž	37,4,-1,44,55	2	zcaron	
+char z<	"
+char ż	37,4,-1,40,51	2	zdotaccent	
+char ÿ	33,1,-21,40,51	3	ydieresis	
+char y:	"
+char ţ	27,4,-23,33,42	3	tcommaaccent	
+char ā	35,7,-1,42,47	2	amacron	
+char ē	28,7,-1,39,47	2	emacron	
+char ī	20,7,-1,35,47	2	imacron	
+char ķ	37,7,-23,55,56	3	kcommaaccent	
+char ļ	20,1,-23,36,57	3	lcommaaccent	
+char ņ	38,7,-23,43,34	1	ncommaaccent	
+char ō	33,7,-1,41,47	2	omacron	
+char ŗ	25,3,-23,34,34	1	rcommaaccent	
+char ū	38,7,-1,44,47	2	umacron	
+char ų	38,7,-13,43,35	0	uogonek	
+char ř	25,7,-1,39,55	2	rcaron	
+char r<	"
+char ş	27,-1,-18,32,34	0	scedilla	
+char ģ	33,-7,-21,40,56	3	gcommaaccent	
+char į	20,5,-13,26,51	2	iogonek	
+char Ș	38,0,-24,43,49	3	Scommaaccent	
+char Ð	58,7,0,63,51	2	Eth	
+char D-	"
+char Đ	58,7,0,63,51	2	Dcroat	
+char Þ	45,3,0,52,49	2	Thorn	
+char TH	"
+char đ	37,7,-1,53,57	2	dcroat	
+char ð	33,7,-1,47,58	2	eth	
+char d-	"
+char þ	37,-1,-21,40,57	3	thorn	
+char th	"
+char €	37,-2,-6,44,49	2	Euro	
+char ¹	22,7,18,26,47	2	onesuperior	
+char 1^	"
+char ²	22,7,17,30,47	2	twosuperior	
+char 2^	"
+char ³	22,6,18,29,47	2	threesuperior	
+char 3^	"
+char °	33,16,28,36,48	2	degree	
+char 0^	"
+char de	"
+char −	43,5,16,47,21	0	minus	
+char mi	"
+char ×	43,9,1,43,35	0	multiply	
+char xx	"
+char mu	"
+char ÷	43,9,0,43,37	0	divide	
+char di	"
+char -:	"
+char ™	83,14,18,88,48	2	trademark	
+char ±	43,9,0,43,42	2	plusminus	
+char +-	"
+char ½	55,8,-1,55,49	2	onehalf	
+char 12	"
+char ¼	55,8,-1,55,49	2	onequarter	
+char 14	"
+char ¾	55,7,-1,55,49	2	threequarters	
+char 34	"
+char 	25,3,-23,14,-5	1	commaaccent	
+char ©	62,11,-2,69,56	2	copyright	
+char co	"
+char ®	62,11,-2,69,56	2	registered	
+char ro	"
+char rg	"
+char ◊	41,2,0,39,62	2	lozenge	
+char lz	"
+char Δ	51,1,0,51,57	2	Delta	
+char ≠	43,9,0,43,36	0	notequal	
+char !=	"
+char √	46,1,-3,43,76	2	radical	
+char sr	"
+char ≤	46,2,0,44,53	2	lessequal	
+char <=	"
+char ≥	46,2,0,44,53	2	greaterequal	
+char >=	"
+char ¬	43,5,2,47,26	0	logicalnot	
+char -,	"
+char no	"
+char ∑	59,1,-10,58,63	2	summation	
+char su	"
+char ∂	41,2,-1,39,63	2	partialdiff	
+char pd	"
+char ¦	43,26,0,30,60	2	brokenbar	
+char ||	"
+char µ	38,1,-18,43,35	0	mu	
+char /u	"
+char А	52,2,-1,57,50	2	afii10017	
+char Б	50,6,0,61,52	2	afii10018	
+char В	50,6,0,54,51	2	afii10019	
+char Г	48,5,-10,61,52	2	afii10020	
+char Д	58,7,0,63,51	2	afii10021	
+char Е	52,6,-1,56,49	2	afii10022	
+char Ё	52,6,-1,56,65	2	afii10023	
+char Ж	62,0,-1,77,48	2	afii10024	
+char З	38,0,-6,40,49	2	afii10025	
+char И	57,11,-1,76,57	2	afii10026	
+char Й	62,11,-1,76,65	2	afii10027	
+char К	55,7,-12,71,48	2	afii10028	
+char Л	52,2,-1,57,50	2	afii10029	
+char М	70,5,-1,84,56	2	afii10030	
+char Н	57,3,-1,76,57	2	afii10031	
+char О	50,9,-1,54,49	2	afii10032	
+char П	48,5,-10,77,57	2	afii10033	
+char Р	45,3,0,54,50	2	afii10034	
+char С	43,7,-6,53,49	2	afii10035	
+char Т	42,5,0,60,54	2	afii10036	
+char У	47,1,-13,64,51	2	afii10037	
+char Ф	45,4,0,52,48	2	afii10038	
+char Х	47,0,-1,56,48	2	afii10039	
+char Ц	62,10,-16,65,48	2	afii10040	
+char Ч	59,10,-1,62,48	2	afii10041	
+char Ш	88,10,-1,92,48	2	afii10042	
+char Щ	88,10,-16,92,48	2	afii10043	
+char Ъ	50,6,0,52,51	2	afii10044	
+char Ы	74,8,0,81,48	2	afii10045	
+char Ь	48,8,0,52,48	2	afii10046	
+char Э	43,5,-6,51,49	2	afii10047	
+char Ю	80,3,-1,84,49	2	afii10048	
+char Я	45,-6,0,52,48	2	afii10049	
+char а	35,7,-1,41,34	0	afii10065	
+char б	37,7,-1,45,57	2	afii10066	
+char в	34,7,-1,39,52	2	afii10067	
+char г	27,7,-1,32,34	0	afii10068	
+char д	34,7,-1,39,57	2	afii10069	
+char е	28,7,-1,32,34	0	afii10070	
+char ё	28,7,-1,34,51	2	afii10071	
+char ж	64,1,-1,68,34	0	afii10072	
+char з	27,7,-1,33,34	0	afii10073	
+char и	38,7,-1,43,35	0	afii10074	
+char й	38,7,-1,44,52	2	afii10075	
+char к	40,7,-13,55,35	0	afii10076	
+char л	42,1,-1,47,35	0	afii10077	
+char м	52,1,-1,57,35	0	afii10078	
+char н	41,7,-1,43,35	0	afii10079	
+char о	33,7,-1,38,34	0	afii10080	
+char п	38,7,-1,43,34	0	afii10081	
+char р	37,-1,-21,40,34	1	afii10082	
+char с	28,7,-1,32,34	0	afii10083	
+char т	52,7,-1,58,34	0	afii10084	
+char у	33,1,-21,40,35	1	afii10085	
+char ф	57,7,-21,61,57	2	afii10086	
+char х	35,6,-13,49,34	0	afii10087	
+char ц	38,7,-10,43,35	0	afii10088	
+char ч	38,7,-1,43,35	0	afii10089	
+char ш	55,7,-1,59,35	0	afii10090	
+char щ	55,7,-10,59,35	0	afii10091	
+char ъ	30,0,-2,33,34	0	afii10092	
+char ы	45,7,-2,51,34	0	afii10093	
+char ь	30,7,-2,33,34	0	afii10094	
+char э	28,7,-1,32,34	0	afii10095	
+char ю	49,7,-1,53,34	0	afii10096	
+char я	44,3,-1,49,36	0	afii10097	
+char Ѐ	52,6,-1,56,74	2	uni0400	
+char Ђ	42,5,0,60,54	2	afii10051	
+char Ѓ	48,5,-10,61,78	2	afii10052	
+char Є	43,7,-6,53,49	2	afii10053	
+char Ѕ	38,0,-6,43,49	2	afii10054	
+char І	32,7,0,40,48	2	afii10055	
+char Ї	32,7,0,40,65	2	afii10056	
+char Ј	33,0,-10,41,48	2	afii10057	
+char Љ	73,2,-1,72,50	2	afii10058	
+char Њ	79,3,-1,76,57	2	afii10059	
+char Ћ	42,5,0,60,54	2	afii10060	
+char Ќ	55,7,-12,71,74	2	afii10061	
+char Ѝ	57,11,-1,76,81	2	uni040D	
+char Ў	47,1,-13,64,72	2	afii10062	
+char Џ	62,2,-16,65,48	2	afii10145	
+char ѐ	28,7,-1,32,59	2	uni0450	
+char ђ	37,6,-14,38,57	2	afii10099	
+char ѓ	27,7,-1,37,61	2	afii10100	
+char є	28,7,-1,32,34	0	afii10101	
+char ѕ	27,3,-1,32,34	0	afii10102	
+char і	20,7,-1,26,51	2	afii10103	
+char ї	20,7,-1,30,51	2	afii10104	
+char ј	18,-11,-21,25,51	3	afii10105	
+char љ	52,1,-1,53,35	0	afii10106	
+char њ	49,7,-1,50,35	0	afii10107	
+char ћ	37,6,-1,42,57	2	afii10108	
+char ќ	40,7,-13,55,60	2	afii10109	
+char ѝ	38,7,-1,43,59	2	uni045D	
+char ў	33,1,-21,44,52	3	afii10110	
+char џ	38,-4,-10,43,35	0	afii10193	
+char ҍ	30,7,-2,33,34	0	uni048D	
+char ҏ	37,-1,-21,40,34	1	uni048F	
+char Ґ	48,5,-10,61,52	2	afii10050	
+char Җ	62,0,-1,77,48	2	uni0496	
+char җ	64,1,-1,68,34	0	uni0497	
+char Ҙ	38,0,-6,40,49	2	uni0498	
+char Ү	47,3,-13,64,51	2	uni04AE	
+char Ҵ	62,10,-16,65,48	2	uni04B4	
+char ҵ	38,7,-10,43,35	0	uni04B5	
+char Ӏ	32,7,0,40,48	2	uni04C0	
+char Ӂ	62,0,-1,77,69	2	uni04C1	
+char ӂ	64,1,-1,68,56	2	uni04C2	
+char Ӑ	52,2,-1,61,69	2	uni04D0	
+char ӑ	35,7,-1,47,54	2	uni04D1	
+char Ӓ	52,2,-1,57,68	2	uni04D2	
+char ӓ	35,7,-1,42,53	2	uni04D3	
+char Ӕ	62,3,0,67,48	2	uni04D4	
+char ӕ	45,7,-1,49,37	0	uni04D5	
+char Ӗ	52,6,-1,56,69	2	uni04D6	
+char ӗ	28,7,-1,45,54	2	uni04D7	
+char Ә	43,7,-6,53,49	2	uni04D8	
+char ә	28,7,-1,32,34	0	afii10846	
+char Ӛ	43,7,-6,53,70	2	uni04DA	
+char ӛ	28,7,-1,40,55	2	uni04DB	
+char Ӝ	62,0,-1,77,68	2	uni04DC	
+char ӝ	64,1,-1,68,55	2	uni04DD	
+char Ӟ	38,0,-6,43,69	2	uni04DE	
+char ӟ	30,7,-1,38,55	2	uni04DF	
+char Ӣ	57,11,-1,76,69	2	uni04E2	
+char ӣ	38,7,-1,45,47	2	uni04E3	
+char Ӥ	57,11,-1,76,75	2	uni04E4	
+char ӥ	38,7,-1,43,53	2	uni04E5	
+char Ӧ	50,9,-1,54,68	2	uni04E6	
+char ӧ	33,7,-1,43,53	2	uni04E7	
+char Ө	50,9,-1,54,49	2	uni04E8	
+char ө	33,7,-1,38,34	0	uni04E9	
+char Ӫ	50,9,-1,54,70	2	uni04EA	
+char ӫ	33,7,-1,40,55	2	uni04EB	
+char Ӭ	43,5,-6,51,70	2	uni04EC	
+char ӭ	28,7,-1,36,55	2	uni04ED	
+char Ӯ	47,1,-13,64,63	2	uni04EE	
+char ӯ	33,1,-21,43,47	3	uni04EF	
+char Ӱ	47,1,-13,64,69	2	uni04F0	
+char ӱ	33,1,-21,40,53	3	uni04F1	
+char Ӳ	47,1,-13,64,75	2	uni04F2	
+char ӳ	33,1,-21,45,59	3	uni04F3	
+char Ӵ	59,10,-1,62,68	2	uni04F4	
+char ӵ	38,7,-1,43,53	2	uni04F5	
+char Ӹ	74,8,0,81,68	2	uni04F8	
+char ӹ	45,7,-2,51,53	2	uni04F9	
+char Ĉ	43,7,-6,53,76	2	Ccircumflex	
+char ĉ	28,7,-1,38,61	2	ccircumflex	
+char Ċ	43,7,-6,53,70	2	Cdotaccent	
+char ċ	28,7,-1,34,55	2	cdotaccent	
+char Ĕ	52,6,-1,57,70	2	Ebreve	
+char ĕ	28,7,-1,45,56	2	ebreve	
+char Ĝ	52,10,-20,56,76	2	Gcircumflex	
+char ĝ	33,-7,-21,40,61	3	gcircumflex	
+char Ġ	52,10,-20,56,70	2	Gdotaccent	
+char ġ	33,-7,-21,40,55	3	gdotaccent	
+char Ĥ	57,3,-1,76,83	2	Hcircumflex	
+char ĥ	37,6,-1,49,83	2	hcircumflex	
+char Ĩ	32,7,0,47,67	2	Itilde	
+char ĩ	20,7,-1,38,54	2	itilde	
+char Ĭ	32,7,0,49,69	2	Ibreve	
+char ĭ	20,7,-1,39,56	2	ibreve	
+char Ĳ	57,7,-10,64,48	2	IJ	
+char ĳ	41,7,-21,46,51	3	ij	
+char Ĵ	33,0,-10,41,74	2	Jcircumflex	
+char ĵ	18,-11,-21,29,61	3	jcircumflex	
+char ĸ	37,6,-13,55,35	0	kgreenlandic	
+char Ŀ	48,3,-1,53,48	2	Ldot	
+char ŀ	38,7,-1,36,57	2	ldot	
+char Ŏ	50,9,-1,57,71	2	Obreve	
+char ŏ	33,7,-1,46,56	2	obreve	
+char Ŝ	38,0,-6,43,75	2	Scircumflex	
+char ŝ	27,3,-1,33,61	2	scircumflex	
+char Ţ	42,5,-18,60,54	2	uni0162	
+char ţ	27,5,-19,33,42	2	uni0163	
+char Ũ	62,10,-1,65,67	2	Utilde	
+char ũ	38,7,-1,47,54	2	utilde	
+char Ŭ	62,10,-1,65,70	2	Ubreve	
+char ŭ	38,7,-1,48,56	2	ubreve	
+char Ŵ	73,9,-2,86,83	2	Wcircumflex	
+char ŵ	57,7,-1,63,63	2	wcircumflex	
+char Ŷ	47,3,-13,64,77	2	Ycircumflex	
+char ŷ	33,1,-21,40,61	3	ycircumflex	
+char ſ	27,-8,-21,45,57	2	longs	
+kern quoteright	s	-1
+kern quoteright	period	-2
+kern quoteright	o	-1
+kern quoteright	d	-1
+kern quoteright	comma	-2
+kern quoteright	AE	-3
+kern comma	quoteright	-3
+kern comma	quotedblright	-3
+kern comma	one	-2
+kern hyphen	Y	1
+kern hyphen	Aring	-2
+kern hyphen	Adieresis	-2
+kern hyphen	Aacute	-2
+kern hyphen	A	-2
+kern period	quoteright	-2
+kern period	quotedblright	-2
+kern period	one	-1
+kern zero	seven	-1
+kern zero	one	-2
+kern zero	four	-1
+kern one	zero	-1
+kern one	six	-2
+kern one	seven	-3
+kern one	period	-1
+kern one	one	-1
+kern one	four	-2
+kern one	five	-1
+kern one	eight	-1
+kern one	comma	-1
+kern two	seven	-2
+kern two	one	-2
+kern three	seven	-2
+kern three	one	-3
+kern three	four	-1
+kern four	seven	-2
+kern four	one	-3
+kern five	seven	-1
+kern five	one	-3
+kern five	four	-1
+kern six	seven	-2
+kern six	one	-2
+kern seven	two	-2
+kern seven	three	-3
+kern seven	six	-2
+kern seven	seven	-1
+kern seven	period	-4
+kern seven	one	-2
+kern seven	four	-3
+kern seven	five	-3
+kern seven	eight	-2
+kern seven	comma	-4
+kern seven	colon	-3
+kern eight	seven	-2
+kern eight	one	-2
+kern eight	four	-1
+kern nine	seven	-2
+kern nine	one	-2
+kern nine	four	-1
+kern A	w	-1
+kern A	v	-1
+kern A	t	-1
+kern A	quoteright	-3
+kern A	quotedblright	-2
+kern A	W	-1
+kern A	V	-1
+kern A	Ugrave	-1
+kern A	Udieresis	-1
+kern A	Ucircumflex	-1
+kern A	Uacute	-1
+kern A	U	-1
+kern A	T	-1
+kern A	G	-1
+kern A	Ccedilla	1
+kern A	C	1
+kern B	Oslash	-1
+kern B	Atilde	-1
+kern B	Aring	-1
+kern B	Adieresis	-1
+kern B	Acircumflex	-1
+kern B	Aacute	-1
+kern B	AE	-1
+kern B	A	-1
+kern C	Odieresis	-1
+kern C	Oacute	-1
+kern C	O	-1
+kern C	Aring	1
+kern C	Adieresis	1
+kern C	Aacute	1
+kern C	A	1
+kern D	Y	1
+kern D	X	-1
+kern D	T	1
+kern D	J	-1
+kern D	Atilde	-1
+kern D	Aring	-1
+kern D	Agrave	-1
+kern D	Adieresis	-1
+kern D	Acircumflex	-1
+kern D	Aacute	-1
+kern D	A	-1
+kern F	u	-1
+kern F	r	-1
+kern F	period	-3
+kern F	oslash	-2
+kern F	oe	-2
+kern F	odieresis	-1
+kern F	oacute	-2
+kern F	o	-2
+kern F	hyphen	-1
+kern F	eacute	-2
+kern F	e	-2
+kern F	comma	-4
+kern F	aring	-2
+kern F	ae	-2
+kern F	adieresis	-2
+kern F	aacute	-2
+kern F	a	-2
+kern F	Odieresis	-1
+kern F	O	-1
+kern F	J	-3
+kern F	Atilde	-3
+kern F	Aring	-3
+kern F	Agrave	-3
+kern F	Adieresis	-3
+kern F	Acircumflex	-3
+kern F	Aacute	-3
+kern F	A	-3
+kern G	W	-1
+kern G	V	-1
+kern G	Atilde	-2
+kern G	Aring	-2
+kern G	Agrave	-2
+kern G	Adieresis	-2
+kern G	Acircumflex	-2
+kern G	Aacute	-2
+kern G	AE	-2
+kern G	A	-2
+kern J	Aring	-1
+kern J	Adieresis	-1
+kern J	AE	-2
+kern J	A	-1
+kern K	y	-1
+kern K	udieresis	-1
+kern K	u	-2
+kern K	oacute	-2
+kern K	o	-2
+kern K	hyphen	-2
+kern K	e	-2
+kern K	aring	-1
+kern K	ae	-2
+kern K	adieresis	-1
+kern K	a	-2
+kern K	T	2
+kern K	S	5
+kern K	G	1
+kern K	C	2
+kern L	quoteright	-5
+kern L	quotedblright	-4
+kern L	hyphen	1
+kern L	W	-1
+kern L	V	-1
+kern L	Udieresis	-1
+kern L	U	-1
+kern L	T	-1
+kern L	S	1
+kern N	udieresis	-1
+kern N	u	-1
+kern N	period	-1
+kern N	oslash	4
+kern N	odieresis	-1
+kern N	oacute	-1
+kern N	o	-1
+kern N	eacute	-1
+kern N	e	-1
+kern N	comma	5
+kern N	aring	-1
+kern N	ae	-1
+kern N	adieresis	-1
+kern N	aacute	-1
+kern N	a	-1
+kern N	Odieresis	-1
+kern N	Oacute	-1
+kern N	G	1
+kern N	Ccedilla	3
+kern N	C	3
+kern N	Aring	-1
+kern N	Adieresis	-1
+kern N	Aacute	-1
+kern N	AE	-1
+kern N	A	-1
+kern O	Y	1
+kern O	X	-1
+kern O	T	1
+kern O	Aring	-1
+kern O	Adieresis	-1
+kern O	Aacute	-1
+kern O	AE	-2
+kern O	A	-1
+kern P	period	-3
+kern P	oslash	-2
+kern P	oe	-2
+kern P	odieresis	-2
+kern P	oacute	-2
+kern P	o	-2
+kern P	hyphen	-2
+kern P	eacute	-1
+kern P	e	-1
+kern P	comma	-3
+kern P	aring	-2
+kern P	ae	-2
+kern P	adieresis	-2
+kern P	aacute	-2
+kern P	a	-2
+kern P	J	-1
+kern P	Aring	-1
+kern P	Adieresis	-1
+kern P	Aacute	-1
+kern P	AE	-1
+kern P	A	-1
+kern R	udieresis	-2
+kern R	uacute	-2
+kern R	u	-2
+kern R	oe	-2
+kern R	odieresis	-2
+kern R	oacute	-2
+kern R	o	-2
+kern R	hyphen	-2
+kern R	eacute	-2
+kern R	e	-2
+kern R	aring	-2
+kern R	ae	-2
+kern R	adieresis	-2
+kern R	aacute	-2
+kern R	a	-2
+kern R	Y	5
+kern R	W	-1
+kern R	V	-1
+kern R	Udieresis	-1
+kern R	U	-1
+kern R	Odieresis	-1
+kern R	Oacute	-1
+kern R	OE	-1
+kern R	O	-1
+kern R	G	1
+kern R	Ccedilla	2
+kern R	C	2
+kern S	t	-2
+kern S	Y	-1
+kern S	W	-1
+kern S	V	-1
+kern S	Aring	-1
+kern S	Adieresis	-1
+kern S	Aacute	-1
+kern S	AE	-1
+kern S	A	-1
+kern T	y	-1
+kern T	w	-2
+kern T	v	-2
+kern T	u	-2
+kern T	semicolon	-2
+kern T	r	-1
+kern T	period	-1
+kern T	oslash	-1
+kern T	o	-1
+kern T	j	1
+kern T	i	1
+kern T	hyphen	-2
+kern T	guilsinglleft	-2
+kern T	guillemotleft	-2
+kern T	g	-1
+kern T	e	-1
+kern T	comma	-2
+kern T	colon	-1
+kern T	c	-1
+kern T	ae	-1
+kern T	a	-1
+kern T	Y	1
+kern T	W	1
+kern T	V	1
+kern T	S	1
+kern T	Otilde	-1
+kern T	Oslash	-1
+kern T	Ograve	-1
+kern T	Odieresis	-1
+kern T	Ocircumflex	-1
+kern T	Oacute	-1
+kern T	OE	-1
+kern T	O	-1
+kern T	G	-2
+kern T	C	-1
+kern U	r	-1
+kern U	p	-1
+kern U	n	-1
+kern U	m	-1
+kern U	comma	-1
+kern U	Atilde	1
+kern U	Aring	1
+kern U	Adieresis	1
+kern U	Acircumflex	1
+kern U	Aacute	1
+kern U	AE	1
+kern U	A	1
+kern V	y	-1
+kern V	u	-1
+kern V	semicolon	-2
+kern V	r	-1
+kern V	period	-4
+kern V	oslash	-3
+kern V	o	-3
+kern V	hyphen	-2
+kern V	guilsinglleft	-3
+kern V	guillemotleft	-3
+kern V	g	-3
+kern V	e	-3
+kern V	comma	-4
+kern V	colon	-2
+kern V	ae	-3
+kern V	a	-3
+kern V	T	2
+kern V	S	-1
+kern V	Otilde	-1
+kern V	Oslash	-1
+kern V	Ograve	-1
+kern V	Odieresis	-1
+kern V	Ocircumflex	-1
+kern V	Oacute	-1
+kern V	O	-1
+kern V	G	-2
+kern V	C	-1
+kern V	Atilde	-1
+kern V	Aring	-1
+kern V	Agrave	-1
+kern V	Adieresis	-1
+kern V	Acircumflex	-1
+kern V	Aacute	-1
+kern V	AE	-3
+kern V	A	-1
+kern W	semicolon	-1
+kern W	period	-3
+kern W	oslash	-2
+kern W	o	-2
+kern W	hyphen	-1
+kern W	guilsinglleft	-1
+kern W	guillemotleft	-1
+kern W	g	-2
+kern W	e	-1
+kern W	comma	-3
+kern W	colon	-1
+kern W	ae	-2
+kern W	a	-2
+kern W	T	2
+kern W	S	-1
+kern W	Oslash	-1
+kern W	G	-1
+kern W	Atilde	-1
+kern W	Aring	-1
+kern W	Agrave	-1
+kern W	Adieresis	-1
+kern W	Acircumflex	-1
+kern W	Aacute	-1
+kern W	AE	-2
+kern W	A	-1
+kern X	hyphen	-2
+kern X	Q	-1
+kern X	Odieresis	-1
+kern X	O	-1
+kern Y	v	-2
+kern Y	u	-2
+kern Y	semicolon	-3
+kern Y	period	-3
+kern Y	p	-2
+kern Y	oslash	-3
+kern Y	o	-3
+kern Y	i	1
+kern Y	hyphen	-2
+kern Y	guilsinglleft	-2
+kern Y	guillemotleft	-2
+kern Y	g	-3
+kern Y	e	-2
+kern Y	comma	-3
+kern Y	colon	-3
+kern Y	ae	-3
+kern Y	a	-3
+kern Y	T	2
+kern Y	S	-1
+kern Y	Otilde	-1
+kern Y	Oslash	-1
+kern Y	Ograve	-1
+kern Y	Odieresis	-1
+kern Y	Ocircumflex	-1
+kern Y	Oacute	-1
+kern Y	O	-1
+kern Y	G	-2
+kern Y	C	-1
+kern Y	Atilde	-1
+kern Y	Aring	-1
+kern Y	Agrave	-1
+kern Y	Adieresis	-1
+kern Y	Acircumflex	-1
+kern Y	Aacute	-1
+kern Y	AE	-3
+kern Y	A	-1
+kern quoteleft	Y	2
+kern quoteleft	W	1
+kern quoteleft	V	1
+kern quoteleft	T	1
+kern quoteleft	Aring	-1
+kern quoteleft	Adieresis	-1
+kern quoteleft	Aacute	-1
+kern quoteleft	AE	-4
+kern quoteleft	A	-1
+kern a	w	-1
+kern a	v	-1
+kern a	quoteright	-3
+kern b	w	-1
+kern c	k	-1
+kern e	x	-1
+kern e	w	-1
+kern e	v	-1
+kern e	t	-1
+kern e	quoteright	-3
+kern f	s	-1
+kern f	quoteright	-2
+kern f	oslash	-1
+kern f	oe	-1
+kern f	odieresis	-1
+kern f	oacute	-1
+kern f	o	-1
+kern f	j	1
+kern f	i	1
+kern f	f	1
+kern f	eacute	-1
+kern f	e	-1
+kern f	aring	-1
+kern f	ae	-1
+kern f	adieresis	-1
+kern f	aacute	-1
+kern f	a	-1
+kern g	odieresis	-1
+kern g	oacute	-1
+kern g	l	-1
+kern g	eacute	-1
+kern g	e	-1
+kern g	aring	-1
+kern g	ae	-1
+kern g	adieresis	-1
+kern g	a	-1
+kern h	quoteright	-3
+kern k	udieresis	-1
+kern k	u	-1
+kern k	s	-1
+kern k	period	-2
+kern k	odieresis	-3
+kern k	oacute	-3
+kern k	o	-3
+kern k	hyphen	-4
+kern k	g	7
+kern k	eacute	-2
+kern k	e	-2
+kern k	comma	5
+kern k	aring	-2
+kern k	ae	-2
+kern k	adieresis	-2
+kern k	aacute	-2
+kern k	a	-2
+kern l	v	-1
+kern m	w	-1
+kern m	v	-1
+kern m	p	-1
+kern n	w	-1
+kern n	v	-1
+kern n	quoteright	-3
+kern n	p	-1
+kern o	quoteright	-2
+kern o	T	1
+kern q	c	-1
+kern r	z	-1
+kern r	y	1
+kern r	u	1
+kern r	t	1
+kern r	s	-1
+kern r	r	1
+kern r	quoteright	-1
+kern r	q	-1
+kern r	period	-3
+kern r	p	1
+kern r	oslash	-1
+kern r	ograve	-1
+kern r	oe	-1
+kern r	odieresis	-1
+kern r	ocircumflex	-1
+kern r	oacute	-1
+kern r	o	-1
+kern r	n	1
+kern r	m	1
+kern r	k	-1
+kern r	j	1
+kern r	i	1
+kern r	hyphen	-3
+kern r	g	-1
+kern r	f	1
+kern r	egrave	-1
+kern r	ecircumflex	-1
+kern r	eacute	-1
+kern r	e	-1
+kern r	d	-1
+kern r	comma	-3
+kern r	colon	-1
+kern r	ccedilla	-1
+kern r	c	-1
+kern r	aring	-1
+kern r	agrave	-1
+kern r	ae	-1
+kern r	adieresis	-1
+kern r	acircumflex	-1
+kern r	aacute	-1
+kern r	a	-1
+kern s	t	-1
+kern s	quoteright	-3
+kern t	semicolon	-1
+kern t	quoteright	-3
+kern t	colon	-1
+kern t	S	1
+kern u	quoteright	-3
+kern v	semicolon	-1
+kern v	s	-1
+kern v	period	-2
+kern v	oslash	-1
+kern v	ograve	-1
+kern v	odieresis	-1
+kern v	oacute	-1
+kern v	o	-1
+kern v	l	-1
+kern v	g	-1
+kern v	egrave	-1
+kern v	ecircumflex	-1
+kern v	eacute	-1
+kern v	e	-1
+kern v	comma	-2
+kern v	colon	-1
+kern v	c	-1
+kern v	atilde	-1
+kern v	aring	-1
+kern v	agrave	-1
+kern v	ae	-1
+kern v	adieresis	-1
+kern v	acircumflex	-1
+kern v	aacute	-1
+kern v	a	-1
+kern w	semicolon	-1
+kern w	s	-1
+kern w	period	-2
+kern w	oslash	-1
+kern w	ograve	-1
+kern w	odieresis	-1
+kern w	oacute	-1
+kern w	o	-1
+kern w	l	-1
+kern w	g	-1
+kern w	egrave	-1
+kern w	ecircumflex	-1
+kern w	eacute	-1
+kern w	e	-1
+kern w	comma	-2
+kern w	colon	-1
+kern w	c	-1
+kern w	atilde	-1
+kern w	aring	-1
+kern w	agrave	-1
+kern w	ae	-1
+kern w	adieresis	-1
+kern w	acircumflex	-1
+kern w	aacute	-1
+kern w	a	-1
+kern x	q	-1
+kern x	o	-1
+kern x	eacute	-1
+kern x	e	-1
+kern x	c	-1
+kern x	a	-1
+kern y	semicolon	-1
+kern y	period	-1
+kern y	oslash	-1
+kern y	comma	-1
+kern y	colon	-1
+kern quotedblleft	Y	2
+kern quotedblleft	W	1
+kern quotedblleft	V	1
+kern quotedblleft	T	1
+kern quotedblleft	Aring	-1
+kern quotedblleft	Adieresis	-1
+kern quotedblleft	Aacute	-1
+kern quotedblleft	AE	-3
+kern guilsinglright	W	-1
+kern guilsinglright	V	-1
+kern guilsinglright	Aring	-2
+kern guilsinglright	Adieresis	-2
+kern guilsinglright	Aacute	-2
+kern guilsinglright	AE	-2
+kern guilsinglright	A	-2
+kern quotedblbase	W	-2
+kern quotedblbase	V	-1
+kern quotedblbase	T	-3
+kern quotedblbase	AE	2
+kern quotedblbase	A	1
+kern quotedblright	Y	1
+kern quotedblright	W	1
+kern quotedblright	V	1
+kern quotedblright	T	1
+kern quotedblright	Aring	-1
+kern quotedblright	Adieresis	-1
+kern quotedblright	Aacute	-1
+kern quotedblright	AE	-4
+kern quotedblright	A	-1
+kern guillemotright	W	-1
+kern guillemotright	V	-1
+kern guillemotright	Aring	-2
+kern guillemotright	Adieresis	-2
+kern guillemotright	Aacute	-2
+kern guillemotright	AE	-2
+kern guillemotright	A	-2
+kern Oslash	A	-2
+kern ae	w	-1
+kern ae	v	-1
+kern Adieresis	w	-1
+kern Adieresis	v	-1
+kern Adieresis	t	-1
+kern Adieresis	quoteright	-3
+kern Adieresis	quotedblright	-3
+kern Adieresis	W	-1
+kern Adieresis	V	-1
+kern Adieresis	U	-1
+kern Adieresis	T	-1
+kern Adieresis	G	-1
+kern Adieresis	C	1
+kern Aacute	w	-1
+kern Aacute	v	-1
+kern Aacute	t	-1
+kern Aacute	quoteright	-3
+kern Aacute	W	-1
+kern Aacute	V	-1
+kern Aacute	U	-1
+kern Aacute	T	-1
+kern Aacute	G	-1
+kern Aacute	C	1
+kern Agrave	W	-1
+kern Agrave	V	-1
+kern Agrave	U	-1
+kern Agrave	T	-1
+kern Agrave	G	-1
+kern Agrave	C	1
+kern Acircumflex	W	-1
+kern Acircumflex	V	-1
+kern Acircumflex	U	-1
+kern Acircumflex	T	-1
+kern Acircumflex	G	-1
+kern Acircumflex	C	1
+kern Atilde	W	-1
+kern Atilde	V	-1
+kern Atilde	U	-1
+kern Atilde	T	-1
+kern Atilde	G	-1
+kern Atilde	C	1
+kern Aring	w	-1
+kern Aring	v	-1
+kern Aring	t	-1
+kern Aring	quoteright	-3
+kern Aring	quotedblright	-2
+kern Aring	W	-1
+kern Aring	V	-1
+kern Aring	U	-1
+kern Aring	T	-1
+kern Aring	G	-1
+kern Aring	C	1
+kern Odieresis	Y	1
+kern Odieresis	X	-1
+kern Odieresis	T	1
+kern Odieresis	A	-1
+kern Oacute	Y	1
+kern Oacute	T	1
+kern Oacute	A	-1
+kern Ograve	Y	1
+kern Ograve	T	1
+kern Ocircumflex	Y	1
+kern Ocircumflex	T	1
+kern Otilde	Y	1
+kern Otilde	T	1
+kern Udieresis	r	-1
+kern Udieresis	p	-1
+kern Udieresis	n	-1
+kern Udieresis	m	-1
+kern Udieresis	comma	-1
+kern Udieresis	A	1
+kern Uacute	r	-1
+kern Uacute	p	-1
+kern Uacute	n	-1
+kern Uacute	m	-1
+kern Uacute	comma	-1
+kern Uacute	A	1
+kern Ugrave	A	1
+kern Ucircumflex	A	1
+kern adieresis	w	-1
+kern adieresis	v	-1
+kern aacute	w	-1
+kern aacute	v	-1
+kern agrave	w	-1
+kern agrave	v	-1
+kern aring	w	-1
+kern aring	v	-1
+kern eacute	w	-1
+kern eacute	v	-1
+kern ecircumflex	w	-1
+kern ecircumflex	v	-1

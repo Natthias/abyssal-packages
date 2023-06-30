@@ -1,0 +1,18 @@
+# Template file for 'ucode-image-gen'
+pkgname=ucode-image-gen
+version=1
+revision=1
+build_style=go
+go_import_path=github.com/anatol/ucode-image-gen
+conf_files="/etc/default/ucode-image-gen"
+short_desc="Fast and secure initramfs generator"
+maintainer="Natthias <natthias@proton.me>"
+license="MIT"
+homepage="https://github.com/anatol/ucode-image-gen"
+distfiles="https://github.com/anatol/ucode-image-gen/archive/refs/tags/v${version}.tar.gz"
+checksum=9e4f7fe602d760b21060811b50f6f70e5d1a705a16afdbcf70b2d5b82c81d956
+
+post_install() {
+        vinstall $FILESDIR/kernel-hook-postinst 744 etc/kernel.d/post-install 25-ucode-image-gen
+        vinstall $FILESDIR/ucode-image-gen.confd 644 etc/default ucode-image-gen
+}

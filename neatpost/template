@@ -1,0 +1,22 @@
+# Template file for 'neatpost'
+pkgname=neatpost
+version=5c912d0
+_commit=5c912d0
+revision=1
+wrksrc=${pkgname}-${_commit}
+build_style=gnu-makefile
+short_desc="Neatroff's postscript postprocessor"
+maintainer="Natthias <natthias@proton.me>"
+license="ISC"
+homepage="http://litcave.rudi.ir/"
+distfiles="https://repo.or.cz/${pkgname}.git/snapshot/${_commit}.tar.gz"
+checksum=4335da8eb14414613d71ce1d231c80bff7353ea95f1718fa0929b7698af85dad
+
+do_build() {
+	make all FDIR=/usr/share/neatroff/font
+}
+
+do_install() {
+	vbin post usr/bin/neatpost
+	vbin pdf usr/bin/neatpdf
+}
