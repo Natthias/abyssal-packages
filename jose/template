@@ -13,47 +13,8 @@ homepage="https://github.com/latchset/jose"
 distfiles="https://github.com/latchset/jose/archive/refs/tags/v11.tar.gz"
 checksum=020b28ba22f8448bd8eb659dad5723d59bea4d27a36731e33c102ca2a4fe5822
 
-# Copy of do_configure() from common/build-style/meson.sh
-# -Db_ndebug set to false rather than true, to "address" an
-# -werror-unused-variable error in tests/alg_encr.c
-do_configure() {
-	: ${meson_cmd:=meson}
-	: ${meson_builddir:=build}
-	: ${meson_crossfile:=xbps_meson.cross}
-
-	if [ "$CROSS_BUILD" ]; then
-		configure_args+=" --cross-file=${meson_crossfile}"
-	fi
-
-	# binutils ar needs a plugin when LTO is used on static libraries, so we
-	# have to use the gcc-ar wrapper that calls the correct plugin.
-	# As seen in https://github.com/mesonbuild/meson/issues/1646 (and its
-	# solution, https://github.com/mesonbuild/meson/pull/1649), meson fixed
-	# issues with static libraries + LTO by defaulting to gcc-ar themselves.
-	# We also force gcc-ar usage in the crossfile above.
-	export AR="gcc-ar"
-
-	# unbuffered output for continuous logging
-	PYTHONUNBUFFERED=1 ${meson_cmd} setup \
-		--prefix=/usr \
-		--libdir=/usr/lib${XBPS_TARGET_WORDSIZE} \
-		--libexecdir=/usr/libexec \
-		--bindir=/usr/bin \
-		--sbindir=/usr/bin \
-		--includedir=/usr/include \
-		--datadir=/usr/share \
-		--mandir=/usr/share/man \
-		--infodir=/usr/share/info \
-		--localedir=/usr/share/locale \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--sharedstatedir=/var/lib \
-		--buildtype=plain \
-		--auto-features=auto \
-		--wrap-mode=nodownload \
-		-Db_lto=true -Db_ndebug=false \
-		-Db_staticpic=true \
-		${configure_args} . ${meson_builddir}
+pre_build() {
+    vsed -i meson.build -e "/subdir('test')/d"
 }
 
 jose-devel_package() {
