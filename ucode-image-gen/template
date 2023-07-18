@@ -10,7 +10,7 @@ maintainer="Natthias <natthias@proton.me>"
 license="MIT"
 homepage="https://github.com/anatol/ucode-image-gen"
 distfiles="https://github.com/anatol/ucode-image-gen/archive/refs/tags/v${version}.tar.gz"
-checksum=9e4f7fe602d760b21060811b50f6f70e5d1a705a16afdbcf70b2d5b82c81d956
+checksum=7a62eada3c03fe638af7fff864a4d084f34c1cf57a642414a6733fffc0583dd6
 
 post_install() {
         vinstall $FILESDIR/kernel-hook-postinst 744 etc/kernel.d/post-install 25-ucode-image-gen
