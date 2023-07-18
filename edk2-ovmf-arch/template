@@ -1,0 +1,34 @@
+# Template file for 'edk2-ovmf-arch'
+pkgname=edk2-ovmf-arch
+version=202305
+revision=1
+archs="x86_64*"
+short_desc="Firmware for Virtual Machines (x86_64, i686) - Extracted from Arch Linux' package"
+maintainer="Matthias <natthias@proton.me>"
+license="BSD-2-Clause-Patent, MIT, Apache-2.0"
+homepage="https://github.com/tianocore/tianocore.github.io/wiki/OVMF"
+distfiles="https://geo.mirror.pkgbuild.com/extra/os/x86_64/edk2-ovmf-${version}-${revision}-any.pkg.tar.zst"
+checksum=acfad90bd7a714caaa1a82ef3eb8f3cd88a4f407639af118d2c50d171bc27bb1
+restricted=yes
+
+do_install() {
+        # ia32 firmware
+	for file in usr/share/edk2/ia32/*; do
+		vinstall ${file} 644 usr/share/edk2/ia32
+	done
+        
+        # x86_64 firmware
+	for file in usr/share/edk2/x64/*; do
+		vinstall ${file} 644 usr/share/edk2/x64
+	done
+
+        # json descriptors
+	for file in usr/share/qemu/firmware/*.json; do
+		vinstall ${file} 644 usr/share/qemu/firmware
+	done
+
+        # licenses
+	for file in usr/share/licenses/edk2-ovmf/*; do
+                vlicense ${file}
+        done
+}
