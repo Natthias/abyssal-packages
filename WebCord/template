@@ -1,6 +1,6 @@
 # Template file for 'WebCord'
 pkgname=WebCord
-version=4.2.0
+version=4.3.0
 revision=1
 _npmver=8.13.2
 depends="electron24"
@@ -10,8 +10,8 @@ short_desc="A Discord and Fosscord API-less client made with the Electron."
 maintainer="Natthias <natthias@proton.me>"
 license="MIT"
 homepage="https://github.com/SpacingBat3/WebCord"
-distfiles="${homepage}/archive/refs/tags/v${version}.tar.gz"
-checksum=f49eb0627ef1cf2ce41cdf22fef81b09614c0080619be6a77016e14a426bc951
+distfiles="https://github.com/SpacingBat3/WebCord/archive/refs/tags/v${version}.tar.gz"
+checksum=298f0a47abaa896f894d93e1d4a76325381c989630161750af5e91593af9aa27
 
 do_build() {
         cp ${FILESDIR}/buildInfo.json ${wrksrc}
