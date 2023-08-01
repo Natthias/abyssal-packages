@@ -1,0 +1,21 @@
+# Template file for 'openvr'
+pkgname=openvr
+version=1.23.8
+revision=1
+build_style=cmake
+makedepends="jsoncpp-devel libglvnd-devel"
+short_desc="API and runtime that allows access to VR hardware from multiple vendors"
+maintainer="Matthias <natthias@proton.me>"
+license="BSD-3-Clause"
+homepage="https://github.com/ValveSoftware/openvr"
+distfiles="https://github.com/ValveSoftware/openvr/archive/refs/tags/v${version}.tar.gz"
+checksum=4d3b5322777f130b70bcd92ce4cc865ee7066df48fe7407ff9e64e3cfb78c42a
+
+openvr-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision}"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove "usr/lib/*.a"
+	}
+}
