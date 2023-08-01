@@ -1,6 +1,6 @@
 # Template file for 'libliftoff'
 pkgname=libliftoff
-version=0.3.0
+version=0.4.1
 revision=1
 build_style=meson
 hostmakedepends="pkg-config"
@@ -10,7 +10,7 @@ maintainer="Natthias <natthias@proton.me>"
 license="GPL-3.0-or-later"
 homepage="https://gitlab.freedesktop.org/emersion/libliftoff"
 distfiles="https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v${version}/libliftoff-v${version}.tar.gz"
-checksum=ef531d4913903da3bdc5fe96324abd080aded89a0d4b7258c1d1095c1a4b7925
+checksum=44ec5cfdd0df040d1023d4d6a48b23c31f21ce61ee2347da9e1ca244fe24dd1c
 
 pre_build() {
     vsed -i meson.build -e "/subdir('test')/d"
