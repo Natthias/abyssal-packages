@@ -1,6 +1,6 @@
 # Template file for 'linux-cld'
 pkgname=linux-cld
-version=6.3
+version=6.4
 revision=1
 build_style=meta
 depends="linux${version}-cld linux-base"

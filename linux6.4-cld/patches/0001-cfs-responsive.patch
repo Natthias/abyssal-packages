@@ -1,0 +1,108 @@
+This patch teaks CFS to improve responsiveness, especially under heavy CPU load
+This results in less total throughput and increased power usage
+This is adapted from https://github.com/zen-kernel/zen-kernel
+--- a/init/Kconfig	2023-02-09 11:28:28.000000000 +0100
++++ b/init/Kconfig	2023-02-15 12:06:47.676459897 +0100
+@@ -816,6 +816,20 @@
+ 
+ menu "Scheduler features"
+ 
++config CFS_RESPONSIVE
++	bool "Tweak CFS for responsiveness"
++	default y
++	help
++	  Tweaks CFS for responsiveness, at the cost of throughput and power usage.
++
++	  --- CFS CPU Scheduler ----------------------------------
++
++	    Scheduling latency.............:   6    ->   4    ms
++	    Minimal granularity............:   0.75 ->   0.4  ms
++	    Wakeup granularity.............:   1    ->   0.5  ms
++	    Bandwidth slice size...........:   5    ->   3    ms
++	    Task rebalancing threshold.....:  32    ->  64
++
+ config UCLAMP_TASK
+ 	bool "Enable utilization clamping for RT/FAIR tasks"
+ 	depends on CPU_FREQ_GOV_SCHEDUTIL
+only in patch2:
+--- a/kernel/sched/fair.c	2023-02-09 11:28:28.000000000 +0100
++++ b/kernel/sched/fair.c	2023-02-15 11:30:47.976520991 +0100
+@@ -69,8 +69,13 @@
+  *
+  * (default: 6ms * (1 + ilog(ncpus)), units: nanoseconds)
+  */
++#ifdef CONFIG_CFS_RESPONSIVE
++unsigned int sysctl_sched_latency			= 4000000ULL;
++static unsigned int normalized_sysctl_sched_latency	= 4000000ULL;
++#else
+ unsigned int sysctl_sched_latency			= 6000000ULL;
+ static unsigned int normalized_sysctl_sched_latency	= 6000000ULL;
++#endif
+ 
+ /*
+  * The initial- and re-scaling of tunables is configurable
+@@ -90,8 +95,13 @@
+  *
+  * (default: 0.75 msec * (1 + ilog(ncpus)), units: nanoseconds)
+  */
++#ifdef CONFIG_CFS_RESPONSIVE
++unsigned int sysctl_sched_min_granularity			= 400000ULL;
++static unsigned int normalized_sysctl_sched_min_granularity	= 400000ULL;
++#else
+ unsigned int sysctl_sched_min_granularity			= 750000ULL;
+ static unsigned int normalized_sysctl_sched_min_granularity	= 750000ULL;
++#endif
+ 
+ /*
+  * Minimal preemption granularity for CPU-bound SCHED_IDLE tasks.
+@@ -104,7 +114,11 @@
+ /*
+  * This value is kept at sysctl_sched_latency/sysctl_sched_min_granularity
+  */
++#ifdef CONFIG_CFS_RESPONSIVE
++static unsigned int sched_nr_latency = 10;
++#else
+ static unsigned int sched_nr_latency = 8;
++#endif
+ 
+ /*
+  * After fork, child runs first. If set to 0 (default) then
+@@ -121,8 +135,13 @@
+  *
+  * (default: 1 msec * (1 + ilog(ncpus)), units: nanoseconds)
+  */
++#ifdef CONFIG_CFS_RESPONSIVE
++unsigned int sysctl_sched_wakeup_granularity			= 500000UL;
++static unsigned int normalized_sysctl_sched_wakeup_granularity	= 500000UL;
++#else
+ unsigned int sysctl_sched_wakeup_granularity			= 1000000UL;
+ static unsigned int normalized_sysctl_sched_wakeup_granularity	= 1000000UL;
++#endif
+ 
+ const_debug unsigned int sysctl_sched_migration_cost	= 500000UL;
+ 
+@@ -175,8 +194,12 @@
+  *
+  * (default: 5 msec, units: microseconds)
+  */
++#ifdef CONFIG_CFS_RESPONSIVE
++static unsigned int sysctl_sched_cfs_bandwidth_slice		= 3000UL;
++#else
+ static unsigned int sysctl_sched_cfs_bandwidth_slice		= 5000UL;
+ #endif
++#endif
+ 
+ #ifdef CONFIG_SYSCTL
+ static struct ctl_table sched_fair_sysctls[] = {
+only in patch2:
+--- a/kernel/sched/sched.h	2023-02-09 11:28:28.000000000 +0100
++++ b/kernel/sched/sched.h	2023-02-15 11:30:47.977520976 +0100
+@@ -2431,6 +2435,8 @@
+ 
+ #ifdef CONFIG_PREEMPT_RT
+ #define SCHED_NR_MIGRATE_BREAK 8
++#elif defined(CONFIG_CFS_RESPONSIVE)
++#define SCHED_NR_MIGRATE_BREAK 64
+ #else
+ #define SCHED_NR_MIGRATE_BREAK 32
+ #endif
