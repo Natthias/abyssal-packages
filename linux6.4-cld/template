@@ -70,6 +70,11 @@ pre_patch() {
 	xzcat $XBPS_SRCDISTDIR/$pkgname-$version/patch-${version}.xz |
 		patch -sNp1 -F0 ||
 			msg_error "Failed to apply upsteam patch\n"
+        # apply personal patches
+	msg_normal "Applying personal patches\n"
+	for patch in $FILESDIR/patches/*/*; do
+		patch -s -Np1 <"${patch}" 2>/dev/null
+	done
 }
 
 do_configure() {
