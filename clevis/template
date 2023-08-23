@@ -10,5 +10,5 @@ short_desc="A pluggable framework for automated decryption"
 maintainer="Natthias <natthias@proton.me>"
 license="GPL-3.0-or-later"
 homepage="https://github.com/latchset/clevis"
-distfiles="https://github.com/latchset/clevis/archive/refs/tags/v18.tar.gz"
-checksum=9e26da79a50157f9220604c90cba5bdfd5fd9d37e1ce0f59ee733b8987fc92eb
+distfiles="https://github.com/latchset/clevis/archive/refs/tags/v${version}.tar.gz"
+checksum=709a23fa31f7d3d918b7e7d3308a08e211824ea8fa43681dbc6fc35cac334001
