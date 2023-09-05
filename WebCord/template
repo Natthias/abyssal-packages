@@ -1,26 +1,25 @@
 # Template file for 'WebCord'
 pkgname=WebCord
-version=4.3.0
+version=4.4.0
 revision=1
-_npmver=8.13.2
+_npmver=9.8.1
 depends="electron24"
 makedepends="git nodejs"
-hostmakedepends=""
 short_desc="A Discord and Fosscord API-less client made with the Electron."
 maintainer="Natthias <natthias@proton.me>"
 license="MIT"
 homepage="https://github.com/SpacingBat3/WebCord"
 distfiles="https://github.com/SpacingBat3/WebCord/archive/refs/tags/v${version}.tar.gz"
-checksum=298f0a47abaa896f894d93e1d4a76325381c989630161750af5e91593af9aa27
+checksum=aa9668102cdec283e2a2af09738c8750ee1bbb57af24de529efc2b1a5e642a82
 
-do_build() {
+do_configure() {
         cp ${FILESDIR}/buildInfo.json ${wrksrc}
 	npm install -g npm@${_npmver}
-        npm install --engine-strict asar
-	npm install
-	npm update
-        npm install -g typescript
-        tsc --sourceMap false --outDir "app"
+        npm ci
+}
+
+do_build() {
+        npm run build
         ./node_modules/.bin/asar pack --exclude-hidden . app.asar --unpack-dir "LICENSE"
 }
 
