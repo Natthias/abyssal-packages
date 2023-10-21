@@ -1,2 +1,2 @@
 #!/bin/sh
-exec electron24 /usr/lib/webcord/app.asar "$args" "$@" || exit 1
+exec electron24 /usr/lib/webcord/app.asar "$@" || exit 1
