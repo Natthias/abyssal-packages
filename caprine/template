@@ -1,0 +1,41 @@
+# Template file for 'caprine'
+# this template is literal garbage
+pkgname=caprine
+version=2.59.1
+revision=1
+_npmver=9.8.1
+depends="electron24"
+makedepends="git nodejs"
+short_desc="Elegant Facebook Messenger desktop app"
+maintainer="Natthias <natthias@proton.me>"
+license="MIT"
+homepage="https://github.com/sindresorhus/caprine"
+distfiles="https://github.com/sindresorhus/caprine/archive/refs/tags/v${version}.tar.gz"
+checksum=e81181f0169be5723a7de1eaf72fda63bd78250d095e971cadd982b4d40f13ca
+
+do_build() {
+        npm install --ignore-scripts
+        npx --yes patch-package
+        npx tsc
+        rm -r node_modules
+        npm install --ignore-scripts --production
+        npm install asar
+        npx --yes patch-package
+        npx asar pack --exclude-hidden . app.asar \
+          --unpack-dir "source,build,readme.md" \
+          --unpack "license,tsconfig.json"
+}
+
+do_install() {
+        vmkdir usr/lib/caprine
+        vcopy app.asar usr/lib/caprine
+        vmkdir usr/share/applications
+        vinstall ${FILESDIR}/caprine.desktop 644 usr/share/applications
+        vbin ${FILESDIR}/caprine
+        vmkdir usr/share/pixmaps
+        vinstall build/icon.png 644 usr/share/pixmaps caprine.png
+}
+
+post_install() {
+	vlicense license
+}
