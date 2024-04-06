@@ -1,10 +1,13 @@
---- a/_scripts/build.js	2023-08-21 03:16:11.000000000 +0200
-+++ b/_scripts/build.js	2023-08-23 00:07:33.729474598 +0200
-@@ -42,6 +42,7 @@
+diff --git a/ebuilder.config.js b/ebuilder.config.js
+index 5b79d96..306867f 100644
+--- a/_scripts/ebuilder.config.js
++++ b/_scripts/ebuilder.config.js
+@@ -3,6 +3,7 @@ const { name, productName } = require('../package.json')
  const config = {
    appId: `io.freetubeapp.${name}`,
-   copyright: 'Copyleft © 2020-2023 freetubeapp@protonmail.com',
+   copyright: 'Copyleft © 2020-2024 freetubeapp@protonmail.com',
 +  electronDist: '/usr/lib/non-existent-electron',
    // asar: false,
    // compression: 'store',
    productName,
+

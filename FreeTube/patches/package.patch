@@ -1,5 +1,8 @@
---- a/_scripts/build.js	2022-08-12 04:09:42.000000000 +0200
-+++ b/_scripts/build.js	2022-08-31 21:06:38.025503775 +0200
+diff --git a/_scripts/build.js b/_scripts/build.js
+index b6bd4a4..bee3366 100644
+--- a/_scripts/build.js
++++ b/_scripts/build.js
+@@ -36,7 +36,7 @@ if (platform === 'darwin') {
      arch = Arch.armv7l
    }
  
@@ -7,8 +10,12 @@
 +  targets = Platform.LINUX.createTarget(['dir'], arch)
  }
  
- const config = {
-@@ -93,7 +93,7 @@
+ builder
+diff --git a/_scripts/ebuilder.config.js b/_scripts/ebuilder.config.js
+index c3b7e73..306867f 100644
+--- a/_scripts/ebuilder.config.js
++++ b/_scripts/ebuilder.config.js
+@@ -47,7 +47,7 @@ const config = {
    linux: {
      category: 'Network',
      icon: '_icons/icon.svg',

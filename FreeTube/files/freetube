@@ -1,5 +1,2 @@
 #!/bin/sh
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-    args="--ozone-platform=wayland"
-fi
-exec electron24 /usr/lib/freetube/app.asar "$args" "$@" || exit 1
+exec electron24 /usr/lib/freetube/app.asar "$@" || exit 1
