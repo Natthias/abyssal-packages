@@ -1,7 +1,4 @@
-Packages I use on Void Linux
-Some don't meet quality standards
-Others are against Void Linux' package guidlines
-Some I intend to submit to upstream once kinks have been smoothed out
+Packages I use on a Void Linux glibc chroot
 
-These packages do not receive checksum updates regularly
-Run xgensum <pkgname> to do it yourself
+They will not be submitted upstream 
+as I don't use Void Linux directly

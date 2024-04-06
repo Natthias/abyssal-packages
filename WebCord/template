@@ -1,6 +1,6 @@
 # Template file for 'WebCord'
 pkgname=WebCord
-version=4.5.2
+version=4.8.0
 revision=1
 _npmver=9.8.1
 depends="electron24"
@@ -10,7 +10,7 @@ maintainer="Natthias <natthias@proton.me>"
 license="MIT"
 homepage="https://github.com/SpacingBat3/WebCord"
 distfiles="https://github.com/SpacingBat3/WebCord/archive/refs/tags/v${version}.tar.gz"
-checksum=e6fca20aa9ef370639ca02097859f61d971b800fb07750bd1f86bee8d1e318a6
+checksum=63042e914192891bf62e6394354fb4f32bedbe7be873c654d61bb21f7f361e8e
 
 do_configure() {
         cp ${FILESDIR}/buildInfo.json ${wrksrc}
@@ -21,7 +21,11 @@ do_configure() {
 do_build() {
         npm run build
         npx asar pack --exclude-hidden . app.asar \
+<<<<<<< HEAD
                 --unpack-dir "sources" \
+=======
+                --unpack-dir "" \
+>>>>>>> refs/remotes/origin/main
                 --unpack "LICENSE,tsconfig.json"
 }
 
