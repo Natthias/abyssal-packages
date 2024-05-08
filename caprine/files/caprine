@@ -1,2 +1,0 @@
-#!/bin/sh
-exec electron24 /usr/lib/caprine/app.asar "$@" || exit 1
