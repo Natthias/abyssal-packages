@@ -21,11 +21,7 @@ do_configure() {
 do_build() {
         npm run build
         npx asar pack --exclude-hidden . app.asar \
-<<<<<<< HEAD
-                --unpack-dir "sources" \
-=======
                 --unpack-dir "" \
->>>>>>> refs/remotes/origin/main
                 --unpack "LICENSE,tsconfig.json"
 }
 
