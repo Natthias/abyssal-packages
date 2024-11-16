@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=WebCord
-StartupWMClass=webcord
-Comment=A Discord and Fosscord client implemented directly without Discord API.
-GenericName=Internet Messenger
 Exec=webcord
-Icon=webcord
+Terminal=false
 Type=Application
+Icon=webcord
+StartupWMClass=WebCord
+Comment=A Discord and Fosscord electron based client implemented without Discord API
 Categories=Network;InstantMessaging;
-Path=/usr/bin
+Keywords=Discord;Fosscord;

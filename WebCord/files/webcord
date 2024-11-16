@@ -1,2 +1,2 @@
 #!/bin/sh
-exec electron24 /usr/lib/webcord/app.asar "$@" || exit 1
+exec electron33 /usr/lib/webcord/app.asar "$@" || exit 1

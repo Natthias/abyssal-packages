@@ -1,20 +1,18 @@
 # Template file for 'WebCord'
 pkgname=WebCord
-version=4.8.0
+version=4.10.2
 revision=1
-_npmver=9.8.1
-depends="electron24"
+depends="electron33"
 makedepends="git nodejs"
-short_desc="A Discord and Fosscord API-less client made with the Electron."
+short_desc="A Discord and Fosscord API-less client made with the Electron"
 maintainer="Natthias <natthias@proton.me>"
 license="MIT"
 homepage="https://github.com/SpacingBat3/WebCord"
 distfiles="https://github.com/SpacingBat3/WebCord/archive/refs/tags/v${version}.tar.gz"
-checksum=63042e914192891bf62e6394354fb4f32bedbe7be873c654d61bb21f7f361e8e
+checksum=868115f11bd43d3cec142b43c9c37da69b47d5b3e8488a3f172f7d016b522b99
 
 do_configure() {
         cp ${FILESDIR}/buildInfo.json ${wrksrc}
-	npm install -g npm@${_npmver}
         npm ci
 }
 
