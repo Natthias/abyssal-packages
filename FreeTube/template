@@ -1,15 +1,15 @@
 # Template file for 'FreeTube'
 pkgname=FreeTube
-version=0.20.0
+version=0.22.0
 revision=1
-depends="electron24 gtk+3 nss"
+depends="electron33 gtk+3 nss"
 makedepends="git yarn nodejs"
 short_desc="An open source desktop YouTube player built with privacy in mind"
 maintainer="Natthias <natthias@proton.me>"
 license="AGPL-3.0-only"
 homepage="https://freetubeapp.io"
 distfiles="https://github.com/FreeTubeApp/FreeTube/archive/refs/tags/v${version}-beta.tar.gz"
-checksum=b30b17c193372aa1704971a947e2392adb63ae9379cbd45790006f9aa4ffa720
+checksum=09832e4fa7f0770e1dc98199f02180bc34f2aca5b371230a607648cc6126eadb
 
 do_build() {
         yarn --cache-folder yarn-cache install
