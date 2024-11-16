@@ -1,0 +1,29 @@
+# Template file for 'dbeaver'
+pkgname=jdtls
+version=1.40.0
+revision=1
+hostmakedepends="apache-maven openjdk21"
+depends="openjdk21-jre python3"
+short_desc="Eclipse Java language server"
+maintainer="natthias <natthias@proton.me>"
+license="Apache-2.0"
+homepage="https://github.com/eclipse-jdtls/eclipse.jdt.ls"
+distfiles="https://github.com/eclipse-jdtls/eclipse.jdt.ls/archive/refs/tags/v${version}.tar.gz"
+checksum="4fb9c19c0e23cd02146ae4a15a33aaeee834b231cdf9fe5d9711ed4a907fbd76"
+
+do_build() {
+	mvn -B package
+}
+
+do_install() {
+	vmkdir usr/share/jdtls
+	vmkdir usr/bin
+
+	cd org.eclipse.jdt.ls.product/target/repository
+	for file in config_linux config_ss_linux features plugins bin ; do
+		vcopy $file usr/share/jdtls
+	done
+
+	ln -s /usr/share/jdtls/bin/jdtls ${PKGDESTDIR}/usr/bin/jdtls
+
+}
